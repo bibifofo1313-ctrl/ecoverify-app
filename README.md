@@ -16,6 +16,12 @@ The frontend expects the news API on `http://localhost:8787` (proxied as `/api/n
 - `/app/onboarding` Onboarding flow
 - `/app/dashboard` Dashboard
 
+## Deploy to Netlify (SPA Routing)
+
+This is a single page application. Netlify uses `netlify.toml` redirects to serve
+`/index.html` for all non-file routes, ensuring deep links and browser refreshes
+work (for example `/app/onboarding`).
+
 ## Stripe Setup (Production)
 
 1. Create a Stripe account and copy your Publishable Key from the Stripe Dashboard.
